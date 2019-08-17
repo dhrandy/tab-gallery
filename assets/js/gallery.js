@@ -1,5 +1,5 @@
 var slideIndex = 1;
-showSlides(slideIndex);
+showSlides(slideIndex); //Change showSlides # if adding more galleries in all 4 places
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -11,7 +11,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
+  var slides = document.getElementsByClassName("mySlides"); // change this if using more galleries
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
